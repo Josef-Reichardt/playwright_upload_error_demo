@@ -6,6 +6,8 @@ If the application sends a larger multipart request, the browser throws an error
 
 ![screenshot](/screenshot.png)
 
+Official issue: https://github.com/microsoft/playwright/issues/29553
+
 ## Project Setup
 
 ```sh
