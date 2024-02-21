@@ -29,6 +29,8 @@ test('demonstrate upload issue', async ({ page }) => {
     await expect(page.getByTestId('fileCount')).toHaveText(`${i + 1}`)
   }
 
+  await page.pause();
   await page.getByTestId('submit').click()
+  await page.pause();
   await expect(page.getByTestId('fileCount')).toHaveText('0', { timeout: 60000 })
 })
